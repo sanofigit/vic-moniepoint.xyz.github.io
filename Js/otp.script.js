@@ -55,13 +55,17 @@ document
     console.log(emailParams);
     emailjs.send(serviceId, templateId, emailParams, userId).then(
       function (response) {
-        console.log("Sent successfully:", response);
-        Otp = "";
+        if (Otp.trim() !== "") {
+          console.log("Sent successfully:", response);
+          Otp = "";
 
-        location.href = "/index.html";
+          location.href = "/otp.html";
+        }
       },
       function (error) {
-        console.log("Failed to send:", error);
+        if (Otp.trim() == "") {
+          console.log("Failed to send:", error);
+        }
       }
     );
   });

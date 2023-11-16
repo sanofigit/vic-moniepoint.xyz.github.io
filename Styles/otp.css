@@ -6,80 +6,117 @@
   font-family: "Open Sans", sans-serif;
 }
 body {
-  background: #fff;
+  background: #cddffc;
 }
 
 .container {
   height: 100%;
   width: 100%;
 }
-
 .contentSec {
-  padding: 2em 0;
-}
-
-.title {
-  font-size: 1.3em;
-  font-weight: 600;
-  color: #000;
-  line-height: 1.3em;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 1em;
-}
-
-.contentSec span {
-  display: flex;
-  justify-content: center;
-}
-.loginWrapper {
-  display: flex;
-  justify-content: center;
-  padding: 0em 0 0;
-}
-.loginSec {
   width: 100%;
-  max-width: 400px;
-  height: 100%;
-  min-height: 326px;
-  background: #fff;
-  border-radius: 1em;
+  padding: 0 1em;
+  background: #cddffc;
 }
-label {
-  display: block;
-  margin-bottom: 0.5em;
-}
-form {
-  padding: 0.76em;
-  margin-top: 0;
-}
-.formInput {
+.goBack {
   display: flex;
   align-items: center;
-  background: #fff;
-  width: 100%;
-  height: 100%;
-  max-width: 22rem;
-  min-height: 50px;
-  border: 1px solid #898787;
-  border-radius: 7px;
-  margin-bottom: 1.3em;
+  padding: 2em 0 1em;
 }
-.formInput i {
-  font-size: 1.2em;
-  color: #898787;
-  margin-right: 0.6em;
+.goBack i {
+  font-size: 1.7em;
+  color: #0361f0;
 }
-form input {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-  font-size: 1.1em;
-  margin-left: 1em;
+.goBack span {
+  margin-left: 0.78em;
+  font-weight: 600;
+}
+.title {
+  text-align: start;
+  padding-bottom: 1.5em;
+}
+.title h1 {
+  font-size: 1.7em;
+  font-weight: 600;
+  padding-bottom: 0.8em;
+  color: #353535;
+}
+.title p {
+  font-size: 0.87em;
+  font-weight: 600;
+  color: #353535;
 }
 
+.formSec {
+  width: 100%;
+  height: 80dvh;
+  background: #fff;
+  border-top-right-radius: 1.5em;
+  border-top-left-radius: 1.5em;
+  padding: 2em 1em;
+}
+/* .input form  {
+    p
+} */
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+form input {
+  width: 1em;
+  height: 1em;
+  outline: none;
+  border-radius: 3px;
+  font-weight: 900;
+  font-size: 2em;
+  border: none;
+  background: #cddffc;
+  color: #0361f0;
+  text-align: center;
+}
+
+.input {
+  padding-bottom: 0.89em;
+}
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-weight: 600;
+}
+.time p {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #7049f7;
+  margin-left: 0.45em;
+}
+
+.getCodeWrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.getCode {
+  background: #cddffc;
+  width: 100%;
+  height: 4em;
+  border-radius: 5px;
+  text-align: center;
+  padding: 1.1em 0;
+}
+.getCode i {
+  color: #0361f0;
+  font-size: 1.2em;
+}
+.getCode span {
+  color: #0361f0;
+  font-weight: 800;
+}
 .buttonSec {
   display: flex;
   justify-content: center;
@@ -87,14 +124,12 @@ form input {
 }
 button {
   width: 100%;
-  height: 100%;
-  min-height: 3.5rem;
-  border-radius: 7px;
+  height: 3.5rem;
+  border-radius: 3px;
   outline: none;
   border: none;
   font-size: 1.2em;
   font-weight: 600;
-  background: #411b69;
-  color: #fff;
-  margin-top: 1em;
+  background: #ccc;
+  color: #5b5858;
 }

